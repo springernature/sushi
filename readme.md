@@ -36,7 +36,7 @@ The only supported value for Release is `4`.
 
 Consortia admins looking to harvest data for their members can download a list of member business partner identifiers via the admin interface. Note that we do not support the combined CR1 report.
 
-# SUSHI for BioMed Central and SpringerOpen
+## SUSHI for BioMed Central and SpringerOpen
 
 To obtain usage statistics for the [BioMed central platform](http://www.biomedcentral.com) and [SpringerOpen site](http://www.springeropen.com) you need to post a similar request to the endpoint `http://services.springer.com/sushi/bmc`.
 
@@ -51,12 +51,12 @@ In this case you need to use your BioMed Central Institutional ID as the value o
       <sus:ID>BMC:201</sus:ID>
     </sus:CustomerReference>
 
-For these platforms on the journal reports apply:
+For these platforms only the journal reports apply:
 
-JR1
-JR1 GOA
-JR2
-JR5
+    JR1
+    JR1 GOA
+    JR2
+    JR5
 
 
 
