@@ -1,4 +1,6 @@
-# The Springer SUSHI service
+# The Springer Nature SUSHI service
+
+## SUSHI for Springer
 
 The Springer SUSHI service enables our customers to download their [COUNTER](http://www.projectcounter.org/) usage statistics for the [Springer Link](http://link.springer.com) platform. Information on the SUSHI protocol is available from the [NISO website](http://www.niso.org/workrooms/sushi/), as is the [schema](http://www.niso.org/schemas/sushi/counter_sushi4_0.xsd) and the [WSDL](http://www.niso.org/schemas/sushi/counter_sushi4_0.wsdl).
 
@@ -36,6 +38,30 @@ The only supported value for Release is `4`.
 
 Consortia admins looking to harvest data for their members can download a list of member business partner identifiers via the admin interface. Note that we do not support the combined CR1 report.
 
+
+## SUSHI for Nature
+
+To obtain usage statistics for [Nature](http://www.nature.com) you need to post a request to the endpoint `http://services.springer.com/sushi/nature`.
+
+In this case you need to use your Site Id as the value of `//CustomerReference/ID`:
+
+    <sus:Requestor>
+      <sus:ID></sus:ID>
+      <sus:Name></sus:Name>
+      <sus:Email>example@biomedcentral.com</sus:Email>
+    </sus:Requestor>
+    <sus:CustomerReference>
+      <sus:ID>1245</sus:ID>
+    </sus:CustomerReference>
+    
+ For Nature only the following journal reports apply:
+
+    JR1
+    JR1 GOA
+    JR2
+    JR5
+    
+    
 ## SUSHI for BioMed Central and SpringerOpen
 
 To obtain usage statistics for the [BioMed central platform](http://www.biomedcentral.com) and [SpringerOpen site](http://www.springeropen.com) you need to post a similar request to the endpoint `http://services.springer.com/sushi/bmc`.
@@ -57,10 +83,3 @@ For these platforms only the journal reports apply:
     JR1 GOA
     JR2
     JR5
-
-
-
-
-
-
-
