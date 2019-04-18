@@ -43,7 +43,13 @@ Consortia admins looking to harvest data for their members can download a list o
 
 To obtain usage statistics for [Nature](http://www.nature.com) you need to post a request to the endpoint `http://services.springer.com/sushi/nature`.
 
-In this case you need to use your Site Id as the value of `//CustomerReference/ID`:
+In this case you need to use your 
+
+A) Site Id (if you are an existing customer that has a SiteID) as the value of `//CustomerReference/ID`
+
+    OR
+
+B) BPID (if you are a new customer, that only has a BPID) as the value of `//CustomerReference/ID`
 
     <sus:Requestor>
       <sus:ID></sus:ID>
