@@ -89,3 +89,31 @@ For these platforms only the journal reports apply:
     JR1 GOA
     JR2
     JR5
+    
+## SUSHI for Scientific American
+
+To obtain usage statistics for the [Scientific American platform](https://www.scientificamerican.com) you need to post a request to the endpoint `http://services.springer.com/sushi/sciam`.
+
+In this case you need to use your 
+
+A) Site Id (if you are an existing customer that has a SiteID) as the value of `//CustomerReference/ID`
+
+    OR
+
+B) BPID (if you are a new customer, that only has a BPID) as the value of `//CustomerReference/ID`
+
+    <sus:Requestor>
+      <sus:ID></sus:ID>
+      <sus:Name></sus:Name>
+      <sus:Email>example@scientificamerican.com</sus:Email>
+    </sus:Requestor>
+    <sus:CustomerReference>
+      <sus:ID>12345</sus:ID>
+    </sus:CustomerReference>
+
+For these platforms only the journal reports apply:
+
+    JR1
+    JR1 GOA
+    JR2
+    JR5
