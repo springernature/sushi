@@ -1,6 +1,48 @@
-# The Springer Nature SUSHI service
+# The Springer Nature SUSHI Service (Release 5)
 
-## SUSHI for Springer
+Here's a guideline on how to use the COUNTER Release 5 version of SUSHI, with any system capable of retrieving SUSHI feeds for Springer and/or Nature. Please note that SUSHI for Release 5 is completely different from the Release 4 version (scroll down for Release 4 version). Here is a summary of what is different:
+
+-Output is JSON format by default (for C4 version it was .CSV).
+-The credentials that are valid for Release 4 SUSHI are not valid for Release 5 SUSHI.
+-The users need to provide a valid api_key to be able to use the endpoints in this new version. More information below.
+
+## SUSHI for SpringerLink & Nature
+
+Our SUSHI Release 5 API enables our customers to download their [COUNTER](http://www.projectcounter.org/) usage statistics for both our [Springerlink](http://link.springer.com) and [Nature](http://nature.com) platforms. Information on the SUSHI protocol is available from the [swagger website](https://app.swaggerhub.com/apis/COUNTER/counter-sushi_5_0_api/1.0.0)
+
+Our endpoint is located at
+
+    `http://counter5.springernature.app/reports/`
+
+Data can be retrieved by posting a valid SUSHI request by providing the mandatory fields.
+
+In order to retrieve data for your organisation you need to know the Springer Nature Business Partner ID of the organisation, and set the 'customer_id' parameter accordingly (instead of 'BPID' in the above request)
+
+The api_key is 'C1UrvZ1891CwS2iUcPQizrCv25La2r3J' and is mandatory.
+
+The following report names are currently supported:
+    
+    TR (/tr)
+    TR_B1 (/tr_b1)
+    TR_B2 (/tr_b2)
+    TR_B3 (/tr_b3)
+    TR_J1 (/tr_j1)
+    TR_J2 (/tr_j2)
+    TR_J3 (/tr_j3)
+    TR_J4 (/tr_j4)
+    
+### Example Request for TR:
+    
+    http://counter5.springernature.app/reports/tr?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+
+### Example Request for TR_J1:
+    
+    http://counter5.springernature.app/reports/tr_j1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+
+
+# The Springer Nature SUSHI Service (Release 4)
+
+## SUSHI for Springerlink
 
 The Springer SUSHI service enables our customers to download their [COUNTER](http://www.projectcounter.org/) usage statistics for the [Springer Link](http://link.springer.com) platform. Information on the SUSHI protocol is available from the [NISO website](http://www.niso.org/workrooms/sushi/), as is the [schema](http://www.niso.org/schemas/sushi/counter_sushi4_0.xsd) and the [WSDL](http://www.niso.org/schemas/sushi/counter_sushi4_0.wsdl).
 
@@ -117,3 +159,5 @@ For these platforms only the journal reports apply:
     JR1 GOA
     JR2
     JR5
+
+
