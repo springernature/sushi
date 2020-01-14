@@ -2,9 +2,9 @@
 
 Here's a guideline on how to use the COUNTER Release 5 version of SUSHI, with any system capable of retrieving SUSHI feeds for Springer and/or Nature. Please note that SUSHI for Release 5 is completely different from the Release 4 version (scroll down for Release 4 version). Here is a summary of what is different:
 
--Output is JSON format by default (for C4 version it was .CSV).
--The credentials that are valid for Release 4 SUSHI are not valid for Release 5 SUSHI.
--The users need to provide a valid api_key to be able to use the endpoints in this new version. More information below.
+- Output is JSON format by default (for C4 version it was .CSV). <br/>
+- The credentials that are valid for Release 4 SUSHI are not valid for Release 5 SUSHI. <br/>
+- The users need to provide a valid api_key to be able to use the endpoints in this new version. More information below. <br/>
 
 ## SUSHI for SpringerLink & Nature
 
@@ -14,11 +14,11 @@ Our endpoint is located at
 
     `http://counter5.springernature.app/reports/`
 
-Data can be retrieved by posting a valid SUSHI request by providing the mandatory fields.
+Data can be retrieved by posting a valid SUSHI request by providing the mandatory fields. 
 
 In order to retrieve data for your organisation you need to know the Springer Nature Business Partner ID of the organisation, and set the 'customer_id' parameter accordingly (instead of 'BPID' in the above request)
 
-The api_key is 'C1UrvZ1891CwS2iUcPQizrCv25La2r3J' and is mandatory.
+The api_key is 'C1UrvZ1891CwS2iUcPQizrCv25La2r3J' and is also mandatory.
 
 The following report names are currently supported:
     
@@ -31,13 +31,35 @@ The following report names are currently supported:
     TR_J3 (/tr_j3)
     TR_J4 (/tr_j4)
     
-### Example Request for TR:
+The file format is by default JSON. The following key/value can also be provided in header for JSON format.
     
+    Key: Accept
+    Value: application/json
+        
+### Example Requests 
+
+TR: 
+
     http://counter5.springernature.app/reports/tr?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
 
-### Example Request for TR_J1:
-    
+TR_J1:
+
     http://counter5.springernature.app/reports/tr_j1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+
+TR_B1: 
+    
+    http://counter5.springernature.app/reports/tr_b1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+    
+### Parameters
+
+For Standard Views; the only parameters are `customer_id`, `begin_date`, `end_date`, `platform`.
+
+`platform` is optional. Is the name of the Platform the usage is being requested for. If omitted, you would get usages for both our platforms (springerlink & nature.com). Here are the possible values for the `platform` parameter:
+    
+    nature.com
+    SpringerLink
+    
+For TR (title master report); there are more options for parameters. Please refer to the [official swagger document.](https://app.swaggerhub.com/apis-docs/COUNTER/counter-sushi_5_0_api/1.0.0#/default/getReportsTR)
 
 
 # The Springer Nature SUSHI Service (Release 4)
