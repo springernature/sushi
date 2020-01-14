@@ -31,10 +31,23 @@ The following report names are currently supported:
     TR_J3 (/tr_j3)
     TR_J4 (/tr_j4)
     
-The file format is by default JSON. The following key/value can also be provided in header for JSON format.
+### Headers
+    
+The following header can be provided for requesting JSON format. However, fhe file format is by default JSON so it is not mandatory. 
     
     Key: Accept
     Value: application/json
+    
+### Parameters
+
+For the TR Standard Views; the only parameters are `customer_id`, `begin_date`, `end_date`, `platform`.
+
+`platform` is an optional paramter. Is the name of the Platform the usage is being requested for. If omitted, you would get usages for both our platforms (springerlink & nature.com). Here are the possible values for the `platform` parameter:
+    
+    nature.com
+    SpringerLink
+    
+For TR (title master report); there are more options for parameters in addition to the above listed ones. Please refer to the [official swagger document.](https://app.swaggerhub.com/apis-docs/COUNTER/counter-sushi_5_0_api/1.0.0#/default/getReportsTR)
         
 ### Example Requests 
 
@@ -49,17 +62,6 @@ TR_J1:
 TR_B1: 
     
     http://counter5.springernature.app/reports/tr_b1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
-    
-### Parameters
-
-For Standard Views; the only parameters are `customer_id`, `begin_date`, `end_date`, `platform`.
-
-`platform` is optional. Is the name of the Platform the usage is being requested for. If omitted, you would get usages for both our platforms (springerlink & nature.com). Here are the possible values for the `platform` parameter:
-    
-    nature.com
-    SpringerLink
-    
-For TR (title master report); there are more options for parameters. Please refer to the [official swagger document.](https://app.swaggerhub.com/apis-docs/COUNTER/counter-sushi_5_0_api/1.0.0#/default/getReportsTR)
 
 
 # The Springer Nature SUSHI Service (Release 4)
