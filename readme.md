@@ -38,7 +38,7 @@ The following header can be provided for requesting JSON format. However, fhe fi
 
 For the TR Standard Views; the only parameters are `customer_id`, `api_key`, `begin_date`, `end_date`, `platform`.
 
-In order to retrieve data for your organisation you need to know the Springer Nature Business Partner ID of the organisation, and set the `customer_id` parameter accordingly (instead of 'BPID' in the examples below). You can get your Springer Nature Business Partner ID by reaching [customer service](https://support.springernature.com/en/support/tickets/new).
+To get data for your organisation you need to know the Springer Nature Business Partner ID ("BPID") of your organisation, and set the `customer_id` parameter accordingly (instead of "BPID" in the examples below). To find your BPID, go to [identity details](https://link.springer.com/identity-details). If your organization is listed, then use the number in parenthesis as your BPID. If you see several organizations, or none, contact [customer service](https://support.springernature.com/en/support/tickets/new).
 
     Parameter: customer_id
     Value: yourBPID	
