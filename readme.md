@@ -12,7 +12,7 @@ Our SUSHI Release 5 API enables our customers to download their [COUNTER](http:/
 
 Our endpoint is located at
 
-    http://counter5.springernature.app/reports/
+    https://counter.public.springernature.app/reports/
 
 Data can be retrieved by posting a valid SUSHI request by providing the mandatory fields. 
 
@@ -67,15 +67,15 @@ For TR (title master report); there are more options for parameters in addition 
 
 TR: 
 
-    http://counter5.springernature.app/reports/tr?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+    https://counter.public.springernature.app/reports/tr?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
 
 TR_J1:
 
-    http://counter5.springernature.app/reports/tr_j1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+    https://counter.public.springernature.app/reports/tr_j1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
 
 TR_B1: 
     
-    http://counter5.springernature.app/reports/tr_b1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+    https://counter.public.springernature.app/reports/tr_b1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
 
 
 # The Springer Nature SUSHI Service (Release 4)
