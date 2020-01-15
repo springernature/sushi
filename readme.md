@@ -4,21 +4,17 @@ Here's a guideline on how to use the COUNTER Release 5 version of SUSHI, with an
 
 - Output is JSON format by default (for C4 version it was .CSV). <br/>
 - The credentials that are valid for Release 4 SUSHI are not valid for Release 5 SUSHI. <br/>
-- The users need to provide a valid api_key to be able to use the endpoints in this new version. More information below. <br/>
+- Provide a valid api_key to use the endpoints in this new version.<br/>
 
-## SUSHI for SpringerLink & Nature
+## SUSHI for SpringerLink & nature.com
 
-Our SUSHI Release 5 API enables our customers to download their [COUNTER](http://www.projectcounter.org/) usage statistics for both our [Springerlink](http://link.springer.com) and [Nature](http://nature.com) platforms. Information on the SUSHI protocol is available from the [swagger website](https://app.swaggerhub.com/apis/COUNTER/counter-sushi_5_0_api/1.0.0)
+Our SUSHI Release 5 API enables our customers to download their [COUNTER](http://www.projectcounter.org/) usage statistics for both our [Springerlink](http://link.springer.com) and [nature.com](http://nature.com) platforms. Information on the SUSHI protocol is available from the [swagger website](https://app.swaggerhub.com/apis/COUNTER/counter-sushi_5_0_api/1.0.0)
 
 Our endpoint is located at
 
-    `http://counter5.springernature.app/reports/`
+    http://counter5.springernature.app/reports/
 
 Data can be retrieved by posting a valid SUSHI request by providing the mandatory fields. 
-
-In order to retrieve data for your organisation you need to know the Springer Nature Business Partner ID of the organisation, and set the 'customer_id' parameter accordingly (instead of 'BPID' in the above request)
-
-The api_key is 'C1UrvZ1891CwS2iUcPQizrCv25La2r3J' and is also mandatory.
 
 The following report names are currently supported:
     
@@ -40,12 +36,30 @@ The following header can be provided for requesting JSON format. However, fhe fi
     
 ### Parameters
 
-For the TR Standard Views; the only parameters are `customer_id`, `begin_date`, `end_date`, `platform`.
+For the TR Standard Views; the only parameters are `customer_id`, `api_key`, `begin_date`, `end_date`, `platform`.
 
-`platform` is an optional paramter. Is the name of the Platform the usage is being requested for. If omitted, you would get usages for both our platforms (springerlink & nature.com). Here are the possible values for the `platform` parameter:
+In order to retrieve data for your organisation you need to know the Springer Nature Business Partner ID of the organisation, and set the `customer_id` parameter accordingly (instead of 'BPID' in the examples below). You can get your Springer Nature Business Partner ID by reaching [customer service](https://support.springernature.com/en/support/tickets/new).
+
+    Parameter: customer_id
+    Value: yourBPID	
+
+The `api_key` is the same for everyone and is also mandatory.
+
+    Parameter: api_key
+    Value: C1UrvZ1891CwS2iUcPQizrCv25La2r3J	
+
+The `begin_date` and `end_date` are also mandatory and should follow the YYYY-MM format. Please note that data is currently available from September 2019 onwards.
+
+    Parameter: begin_date
+    Value: 2020-01
     
-    nature.com
-    SpringerLink
+    Parameter: end_date
+    Value: 2020-12
+
+`platform` is an optional paramter. Is the name of the Platform the usage is being requested for. If omitted, you would get usages for both our platforms (springerlink & nature.com).
+    
+    Parameter: platform
+    Value: nature.com, SpringerLink
     
 For TR (title master report); there are more options for parameters in addition to the above listed ones. Please refer to the [official swagger document.](https://app.swaggerhub.com/apis-docs/COUNTER/counter-sushi_5_0_api/1.0.0#/default/getReportsTR)
         
