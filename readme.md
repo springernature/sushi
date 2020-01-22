@@ -12,20 +12,20 @@ Our SUSHI Release 5 API enables our customers to download their [COUNTER](http:/
 
 Our endpoint is located at
 
-    https://counter.public.springernature.app/reports/
+    https://counter.public.springernature.app
 
 Data can be retrieved by posting a valid SUSHI request by providing the mandatory fields. 
 
 The following report names are currently supported:
     
-    TR (/tr)
-    TR_B1 (/tr_b1)
-    TR_B2 (/tr_b2)
-    TR_B3 (/tr_b3)
-    TR_J1 (/tr_j1)
-    TR_J2 (/tr_j2)
-    TR_J3 (/tr_j3)
-    TR_J4 (/tr_j4)
+    TR (/reports/tr)
+    TR_B1 (/reports/tr_b1)
+    TR_B2 (/reports/tr_b2)
+    TR_B3 (/reports/tr_b3)
+    TR_J1 (/reports/tr_j1)
+    TR_J2 (/reports/tr_j2)
+    TR_J3 (/reports/tr_j3)
+    TR_J4 (/reports/tr_j4)
     
 ### Headers
     
@@ -76,8 +76,7 @@ TR_J1:
 TR_B1: 
     
     https://counter.public.springernature.app/reports/tr_b1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
-
-
+    
 # The Springer Nature SUSHI Service (Release 4)
 
 ## SUSHI for Springerlink
