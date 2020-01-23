@@ -10,7 +10,7 @@ Here's a guideline on how to use the COUNTER Release 5 version of SUSHI, with an
 
 Our SUSHI Release 5 API enables our customers to download their [COUNTER](http://www.projectcounter.org/) usage statistics for both our [Springerlink](http://link.springer.com) and [nature.com](http://nature.com) platforms. Information on the SUSHI protocol is available from the [swagger website](https://app.swaggerhub.com/apis/COUNTER/counter-sushi_5_0_api/1.0.0)
 
-Our endpoint is located at
+Our endpoint (SUSHI API URL / Vendor URL) is:
 
     https://counter.public.springernature.app
 
