@@ -16,7 +16,7 @@ Our endpoint (SUSHI API URL / Vendor URL) is:
 
 Data can be retrieved by posting a valid SUSHI request by providing the mandatory fields. 
 
-The following report names are currently supported:
+The following reports are currently supported:
     
     TR (/reports/tr)
     TR_B1 (/reports/tr_b1)
@@ -67,15 +67,15 @@ For TR (title master report); there are more options for parameters in addition 
 
 TR: 
 
-    https://counter.public.springernature.app/reports/tr?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+    https://counter.public.springernature.app/reports/tr?customer_id=999888777&begin_date=2019-09&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
 
 TR_J1:
 
-    https://counter.public.springernature.app/reports/tr_j1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+    https://counter.public.springernature.app/reports/tr_j1?customer_id=999888777&begin_date=2019-09&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
 
 TR_B1: 
     
-    https://counter.public.springernature.app/reports/tr_b1?customer_id=BPID&begin_date=2020-01&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+    https://counter.public.springernature.app/reports/tr_b1?customer_id=999888777&begin_date=2019-09&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
     
 # The Springer Nature SUSHI Service (Release 4)
 
