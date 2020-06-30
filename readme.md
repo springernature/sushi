@@ -56,7 +56,7 @@ The `begin_date` and `end_date` are also mandatory and should follow the YYYY-MM
     Parameter: end_date
     Value: 2020-12
 
-`platform` is an optional paramter. Is the name of the Platform the usage is being requested for. If omitted, you would get usages for both our platforms (springerlink & nature.com).
+`platform` is an optional parameter. Is the name of the Platform the usage is being requested for. If omitted, you would get usage for both of our platforms (springerlink & nature.com).
     
     Parameter: platform
     Value: nature.com, SpringerLink
