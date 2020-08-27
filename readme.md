@@ -122,13 +122,7 @@ Consortia admins looking to harvest data for their members can download a list o
 
 To obtain usage statistics for [Nature](http://www.nature.com) you need to post a request to the endpoint `http://services.springer.com/sushi/nature`.
 
-In this case you need to use your 
-
-A) Site Id (if you are an existing customer that has a SiteID) as the value of `//CustomerReference/ID`
-
-    OR
-
-B) BPID (if you are a new customer, that only has a BPID) as the value of `//CustomerReference/ID`
+In this case you need to use your BPID as the value of `//CustomerReference/ID`
 
     <sus:Requestor>
       <sus:ID></sus:ID>
@@ -136,7 +130,7 @@ B) BPID (if you are a new customer, that only has a BPID) as the value of `//Cus
       <sus:Email>example@biomedcentral.com</sus:Email>
     </sus:Requestor>
     <sus:CustomerReference>
-      <sus:ID>1245</sus:ID>
+      <sus:ID>3000093925</sus:ID>
     </sus:CustomerReference>
     
  For Nature only the following journal reports apply:
@@ -173,13 +167,7 @@ For these platforms only the journal reports apply:
 
 To obtain usage statistics for the [Scientific American platform](https://www.scientificamerican.com) you need to post a request to the endpoint `http://services.springer.com/sushi/sciam`.
 
-In this case you need to use your 
-
-A) Site Id (if you are an existing customer that has a SiteID) as the value of `//CustomerReference/ID`
-
-    OR
-
-B) BPID (if you are a new customer, that only has a BPID) as the value of `//CustomerReference/ID`
+In this case you need to use your BPID as the value of `//CustomerReference/ID`
 
     <sus:Requestor>
       <sus:ID></sus:ID>
@@ -187,7 +175,7 @@ B) BPID (if you are a new customer, that only has a BPID) as the value of `//Cus
       <sus:Email>example@scientificamerican.com</sus:Email>
     </sus:Requestor>
     <sus:CustomerReference>
-      <sus:ID>12345</sus:ID>
+      <sus:ID>3000093925</sus:ID>
     </sus:CustomerReference>
 
 For these platforms only the journal reports apply:
