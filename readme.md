@@ -41,12 +41,12 @@ For the TR Standard Views; the only parameters are `customer_id`, `api_key`, `be
 To get data for your organisation you need to know the Springer Nature Business Partner ID ("BPID") of your organisation, and set the `customer_id` parameter accordingly (instead of "BPID" in the examples below). To find your BPID, go to [identity details](https://link.springer.com/identity-details). If your organization is listed, then use the number in parenthesis as your BPID. If you see several organizations, or none, contact [customer service](https://support.springernature.com/en/support/tickets/new).
 
     Parameter: customer_id
-    Value: yourBPID	
+    Value: [your BPID]	
 
-The `api_key` is the same for everyone and is also mandatory.
+The `api_key` for your organization can be found in the [Springer Nature Librarian Admin Portal](https://librarian.springernature.com/organizations/usage#counter5sushi)
 
     Parameter: api_key
-    Value: C1UrvZ1891CwS2iUcPQizrCv25La2r3J	
+    Value: [your ApiKey]	
 
 The `begin_date` and `end_date` are also mandatory and should follow the YYYY-MM format. Please note that data is currently available from September 2019 onwards.
 
@@ -63,19 +63,19 @@ The `begin_date` and `end_date` are also mandatory and should follow the YYYY-MM
     
 For TR (title master report); there are more options for parameters in addition to the above listed ones. Please refer to the [official swagger document.](https://app.swaggerhub.com/apis-docs/COUNTER/counter-sushi_5_0_api/1.0.0#/default/getReportsTR)
         
-### Example Requests 
+### Example
 
-TR: 
+```
+    https://counter.public.springernature.app/reports/[report type]?customer_id=[your BPID]&begin_date=2019-09&end_date=2020-01&api_key=[your ApiKey]
+```
+Here are some example requests and reports.
 
-    https://counter.public.springernature.app/reports/tr?customer_id=999888777&begin_date=2019-09&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+[TR Master](https://counter.public.springernature.app/reports/tr?customer_id=3000093925&begin_date=2019-09&end_date=2020-01&api_key=kLibyHnf4wDjkvkt37MUxXQcdZYnVsYH)
 
-TR_J1:
+[TR_J1](https://counter.public.springernature.app/reports/tr_j1?customer_id=3000093925&begin_date=2019-09&end_date=2020-01&api_key=kLibyHnf4wDjkvkt37MUxXQcdZYnVsYH)
 
-    https://counter.public.springernature.app/reports/tr_j1?customer_id=999888777&begin_date=2019-09&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
-
-TR_B1: 
-    
-    https://counter.public.springernature.app/reports/tr_b1?customer_id=999888777&begin_date=2019-09&end_date=2020-01&api_key=C1UrvZ1891CwS2iUcPQizrCv25La2r3J
+[TR_B1](https://counter.public.springernature.app/reports/tr_b1?customer_id=3000093925&begin_date=2019-09&end_date=2020-01&api_key=kLibyHnf4wDjkvkt37MUxXQcdZYnVsYH)
+ 
     
 # The Springer Nature SUSHI Service (Release 4)
 
