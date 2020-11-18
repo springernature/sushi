@@ -18,7 +18,7 @@ Data can be retrieved by posting a valid SUSHI request by providing the mandator
 
 The following reports are currently supported:
     
-    TR (/reports/tr)
+    TR    (/reports/tr)
     TR_B1 (/reports/tr_b1)
     TR_B2 (/reports/tr_b2)
     TR_B3 (/reports/tr_b3)
@@ -26,6 +26,9 @@ The following reports are currently supported:
     TR_J2 (/reports/tr_j2)
     TR_J3 (/reports/tr_j3)
     TR_J4 (/reports/tr_j4)
+    PR    (/reports/pr)
+    PR_P1 (/reports/pr_p1)
+    
     
 ### Headers
     
@@ -38,15 +41,15 @@ The following header can be provided for requesting JSON format. However, fhe fi
 
 For the TR Standard Views; the only parameters are `customer_id`, `api_key`, `begin_date`, `end_date`, `platform`.
 
-To get data for your organisation you need to know the Springer Nature Business Partner ID ("BPID") of your organisation, and set the `customer_id` parameter accordingly (instead of "BPID" in the examples below). To find your BPID, go to [identity details](https://link.springer.com/identity-details). If your organization is listed, then use the number in parenthesis as your BPID. If you see several organizations, or none, contact [customer service](https://support.springernature.com/en/support/tickets/new).
+To get data for your organisation you need to know the Springer Nature Business Partner ID ("BPID") of your organisation, and set the `customer_id` parameter accordingly. To find your BPID, go to [identity details](https://link.springer.com/identity-details). If your organization is listed, then use this as your `customer_id`. If you see several organizations, or none, contact [customer service](https://support.springernature.com/en/support/tickets/new).
 
     Parameter: customer_id
-    Value: [your BPID]	
+    Value: [your customer_id]	
 
 The `api_key` for your organization can be found in the [Springer Nature Librarian Admin Portal](https://librarian.springernature.com/organizations/usage#counter5sushi)
 
     Parameter: api_key
-    Value: [your ApiKey]	
+    Value: [your api_key]	
 
 The `begin_date` and `end_date` are also mandatory and should follow the YYYY-MM format. Please note that data is currently available from September 2019 onwards.
 
@@ -66,15 +69,15 @@ For TR (title master report); there are more options for parameters in addition 
 ### Example
 
 ```
-    https://counter.public.springernature.app/reports/[report type]?customer_id=[your BPID]&begin_date=2019-09&end_date=2020-01&api_key=[your ApiKey]
+    https://counter.public.springernature.app/reports/[report type]?customer_id=[your customer_id]&begin_date=2019-09&end_date=2020-01&api_key=[your api_key]
 ```
-Here are some example requests and reports.
+Here are some example requests & reports.
 
-[TR Master](https://counter.public.springernature.app/reports/tr?customer_id=3000093925&begin_date=2019-09&end_date=2020-01&api_key=kLibyHnf4wDjkvkt37MUxXQcdZYnVsYH)
+[TR (/reports/tr)](https://counter.public.springernature.app/reports/tr?customer_id=3000093925&begin_date=2019-09&end_date=2020-01&api_key=kLibyHnf4wDjkvkt37MUxXQcdZYnVsYH)
 
-[TR_J1](https://counter.public.springernature.app/reports/tr_j1?customer_id=3000093925&begin_date=2019-09&end_date=2020-01&api_key=kLibyHnf4wDjkvkt37MUxXQcdZYnVsYH)
+[TR_J1 (/reports/tr_j1)](https://counter.public.springernature.app/reports/tr_j1?customer_id=3000093925&begin_date=2019-09&end_date=2020-01&api_key=kLibyHnf4wDjkvkt37MUxXQcdZYnVsYH)
 
-[TR_B1](https://counter.public.springernature.app/reports/tr_b1?customer_id=3000093925&begin_date=2019-09&end_date=2020-01&api_key=kLibyHnf4wDjkvkt37MUxXQcdZYnVsYH)
+[TR_B1 (/reports/tr_b1)](https://counter.public.springernature.app/reports/tr_b1?customer_id=3000093925&begin_date=2019-09&end_date=2020-01&api_key=kLibyHnf4wDjkvkt37MUxXQcdZYnVsYH)
  
     
 # The Springer Nature SUSHI Service (Release 4)
