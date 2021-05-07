@@ -62,7 +62,7 @@ The `begin_date` and `end_date` are also mandatory and should follow the YYYY-MM
 `platform` is an optional parameter. Is the name of the Platform the usage is being requested for. If omitted, you would get usage for all platforms.
     
     Parameter: platform
-    Value: nature.com, SpringerLink, BMC, SciAm, "SN:ResearchGate"
+    Value: adis, BMC, mat, nature.com, NatureAsia, SciAm, SN:ResearchGate, SpringerLink  
     
 For TR (title master report); there are more options for parameters in addition to the above listed ones. Please refer to the [official swagger document.](https://app.swaggerhub.com/apis-docs/COUNTER/counter-sushi_5_0_api/1.0.0#/default/getReportsTR)
         
