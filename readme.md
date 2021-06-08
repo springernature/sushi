@@ -14,6 +14,10 @@ Our endpoint (SUSHI API URL / Vendor URL) is:
 
     https://counter.public.springernature.app
 
+Swagger endpoint :
+
+    https://counter.public.springernature.app/swagger-ui
+    
 Data can be retrieved by posting a valid SUSHI request by providing the mandatory fields. 
 
 The following reports are currently supported:
