@@ -36,11 +36,13 @@ The following reports are supported:
     
 ### Headers
     
-To get a JSON file, this header can be set. However, JSON is the default so this header is not mandatory.
+We can deliver JSON or TSV files. JSON is the default so this header is not mandatory.
     
     Key: Accept
-    Value: application/json
-    
+    Value, one of the following:
+    - application/json
+    - text/tab-separated-values
+
 ### Parameters
 
 For the Standard Views the parameters are `customer_id`, `api_key`, `begin_date`, `end_date`, and `platform`.
