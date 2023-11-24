@@ -1,14 +1,6 @@
-# The Springer Nature SUSHI Service (Release 5)
+# The Springer Nature SUSHI Service (Release 5.0.2)
 
-Here's a guideline on how to use the COUNTER Release 5 version of SUSHI, with any system capable of retrieving SUSHI feeds for Springer and/or Nature. SUSHI for Release 5 is different than the Release 4 version. Here is a summary of the differences:
-
-- Output is JSON format by default (for C4 version it was .CSV). <br/>
-- The credentials that are valid for Release 4 SUSHI are not valid for Release 5 SUSHI. <br/>
-- Provide a valid api_key to use the endpoints in this new version.<br/>
-
-## SUSHI for SpringerLink & nature.com
-
-Our SUSHI Release 5 API enables our customers to download their [COUNTER](http://www.projectcounter.org/) usage statistics for many of our platforms. Information on the SUSHI protocol is available from the [swagger website](https://app.swaggerhub.com/apis/COUNTER/counter-sushi_5_0_api/1.0.0). Details about which data is available are listed on our [support pages](https://support.springernature.com/en/support/solutions/articles/6000230255-counter-release-5-details).
+Here's a guideline on how to use the [COUNTER](http://www.projectcounter.org/) Release 5.0.2 version of SUSHI, with any system capable of retrieving SUSHI feeds. Information on the SUSHI protocol is available from the [swagger website](https://app.swaggerhub.com/apis/COUNTER/counter-sushi_5_0_api/1.0.0). Details about which data is available are listed on our [support pages](https://support.springernature.com/en/support/solutions/articles/6000230255-counter-release-5-details).
 
 Our endpoint (SUSHI API URL / Vendor URL) is:
 
